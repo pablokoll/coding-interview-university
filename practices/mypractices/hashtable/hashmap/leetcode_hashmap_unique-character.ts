@@ -12,6 +12,14 @@ function firstUniqChar(s: string): number {
             return s.indexOf(key);
         }
     }
+
+    // Option 2 to find the first unique character (lineal not uses a indexOf) 
+    // for (let i = 0; i < s.length; i++) {
+    //     if (hashMapChars.get(s[i]) === 1) {
+    //         return i;
+    //     }
+    // }
+
     return -1;
 }
 
