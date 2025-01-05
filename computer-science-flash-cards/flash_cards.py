@@ -5,7 +5,7 @@ from flask import Flask, request, session, g, redirect, url_for, abort, \
 
 app = Flask(__name__)
 app.config.from_object(__name__)
-nameDB='cards.db'
+nameDB='cards-jwasham-extreme.db'
 pathDB='db'
 
 def load_config():
