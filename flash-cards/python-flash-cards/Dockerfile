@@ -1,5 +1,4 @@
 FROM python:3.9
-LABEL maintainer="Tinpee <tinpee.dev@gmail.com>"
 
 ADD . /src
 WORKDIR /src
