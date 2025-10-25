@@ -1,0 +1,26 @@
+{
+  // Python configuration
+  "python.languageServer": "Pylance",
+
+  // Linting with Ruff
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit",
+      "source.organizeImports": "explicit"
+    }
+  },
+
+  // Ruff configuration
+  "ruff.enable": true,
+  "ruff.lint.enable": true,
+  "ruff.format.args": [],
+  "ruff.lint.args": [],
+
+  // Enable type checking
+  "python.analysis.typeCheckingMode": "basic",
+
+  // Show linting problems
+  "python.analysis.diagnosticMode": "workspace"
+}
