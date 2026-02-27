@@ -6,7 +6,23 @@
 
 
 def jbelmu(text):
-    return text
+    # itero por casa palabra hago un split “ “ y en cada palabra mapeo las letraa del medio con hn sort alfabetico
+    final = ""
+    strings = text.split(" ")
+    for index, string in enumerate(strings):
+        middleSorted = sorted(string[1:-1])
+        middleString = ""
+        if len(string) > 1:
+            middleString = "".join(middleSorted)
+            final += f"{string[0]}{middleString}{string[-1]}"
+        else:
+            final += f"{string[0]}"
+            
+        if len(strings) > index:
+            final += " "
+    # junto todo y devuelvo el nuevo string
+    print(f"F {final}")
+    return final.strip()
 
 
 jbelmu("hello world")  # should return "hello wlord".
